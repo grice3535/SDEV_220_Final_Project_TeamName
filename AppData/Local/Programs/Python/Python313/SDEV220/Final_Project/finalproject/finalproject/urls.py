@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rxexpress import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('patient_check/', views.patient_check, name='patient_check'),
 ]
